@@ -1,0 +1,5 @@
+mpg <- read.csv("mpg.csv")
+sd_city <- sd(mpg$cty)
+cat("Standard deviation of city miles per gallon: ", sd_city, "\n")
+var_highway <- var(mpg$hwy)
+cat("Variance of highway miles per gallon: ", var_highway, "\n")

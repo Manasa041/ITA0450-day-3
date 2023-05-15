@@ -1,0 +1,7 @@
+mpg <- read.csv("mpg.csv")
+disp_range <- range(mpg$disp)
+cat("Range of disp: ", disp_range, "\n")
+disp_quartiles <- quantile(mpg$disp)
+cat("Quartiles of disp: ", disp_quartiles, "\n")
+disp_iqr <- IQR(mpg$disp)
+cat("Interquartile range of disp: ", disp_iqr, "\n")
